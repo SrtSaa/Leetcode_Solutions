@@ -1,0 +1,17 @@
+There is a direct relation between left rotation and right rotation of an array.
+
+If an array has length `n`, then:
+
+- Left rotate by `k` is the same as right rotate by `n - k`
+- Right rotate by `k` is the same as left rotate by `n - k`
+
+This works because both rotations just move elements in opposite directions while wrapping around the array.
+
+Example:
+
+For array `1 2 3 4 5`:
+
+- Left rotate by `2` gives `3 4 5 1 2`
+- Right rotate by `3` also gives `3 4 5 1 2`
+
+So, left and right rotation are complementary operations.

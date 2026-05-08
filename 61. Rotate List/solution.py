@@ -2,10 +2,12 @@
 from typing import Optional
 
 
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         if head == None: 
@@ -28,4 +30,7 @@ class Solution:
         tail.next = head
         return newhead
 
+
+# Time complexity: O(n)
+# Space complexity: O(1)
         
