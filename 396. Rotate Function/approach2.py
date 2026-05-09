@@ -13,3 +13,7 @@ class Solution:
             sum = sum + total_sum - n*nums[n-1-i]
             ans = max(ans, sum)
         return ans
+
+
+# Time Complexity: O(n)
+# Space Complexity: O(1)

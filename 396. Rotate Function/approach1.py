@@ -26,3 +26,7 @@ class Solution:
             ans = max(ans, calculate(nums))
             right_rotate(nums, 1)
         return ans
+    
+
+# Time Complexity: O(n^2)
+# Space Complexity: O(1)
