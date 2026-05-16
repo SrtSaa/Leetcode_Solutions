@@ -5,7 +5,8 @@ class Solution:
         l = 0
         r = len(nums)-1
         while(l<r):
-            mid = (l+r) >> 1
+            # mid = (l+r) >> 1
+            mid = l + (r-l) // 2
             if nums[mid] < nums[r]:
                 r = mid
             else:
