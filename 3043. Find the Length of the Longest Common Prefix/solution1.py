@@ -13,7 +13,7 @@ class Solution:
                 s.add(num)
                 num = num // 10
         for num in arr2:
-            while num > 0:
+            while num > 0 and int(math.log(num, 10))+1 > ans:
                 if num in s:
                     ans = max(ans, int(math.log(num, 10))+1)
                     break
