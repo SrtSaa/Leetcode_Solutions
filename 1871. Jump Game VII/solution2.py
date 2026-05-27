@@ -8,7 +8,6 @@ class Solution:
             return False
         dq = deque([0])
         for i in range(minJump, n):
-            print(i)
             if s[i] != '0': 
                 continue
             while dq and ( i < dq[0] + minJump or i > dq[0] + maxJump):
@@ -19,7 +18,6 @@ class Solution:
                 if i == n-1: 
                     return True
                 dq.append(i)
-            print(dq)
         return False
                 
 
